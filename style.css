@@ -1,0 +1,66 @@
+@import url('/node_modules/browser-style-normalizer/dist/index.css');
+
+@font-face {
+  font-family: Abril Fatface;
+  src: url(/assets/fonts/Abril_Fatface/AbrilFatface-Regular.woff2);
+}
+@font-face {
+  font-family: Work Sans_bold;
+  src: url(/assets/fonts/Work_Sans/static/WorkSans-Bold.woff2);
+  font-weight: bold;
+}
+@font-face {
+  font-family: Work Sans_italic;
+  src: url(/assets/fonts/Work_Sans/static/WorkSans-LightItalic.woff2);
+  font-weight: italic;
+}
+@font-face {
+  font-family: Work Sans_Regular;
+  src: url(/assets/fonts/Work_Sans/static/WorkSans-Regular.woff2);
+  font-weight: normal;
+}
+
+:root {
+  /* variables de couleurs */
+  --black: #000000;
+  --air_force_blue: #547D87;
+  --charcoal: #2B4045;
+  --sinopia: #D0451B;
+  --white_smoke: #F5F5F6;
+
+}
+
+header {
+  background-image: url(assets/img/home.jpeg);
+  background-size: cover;
+  height: 20.5rem;
+  
+}
+
+h1 {
+  font-family: Abril Fatface;
+  font-size: 40px;
+  padding-left: 1rem;
+  margin-bottom: 3rem;
+
+  span { color : var(--air_force_blue)
+
+  }
+}
+header p {
+  font-family: Work Sans_italic;
+  font-size: 24px;
+  margin-right: 0,5rem;
+  margin-left: 5rem;
+
+}
+
+h2 {
+  font-family: Abril Fatface;
+  font-size: 40px;
+  color: white;
+}
+
+.box{
+  background-color: #547D87;
+}
