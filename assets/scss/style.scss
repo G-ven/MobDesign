@@ -1,0 +1,29 @@
+@import url('/node_modules/browser-style-normalizer/dist/index.css');
+
+
+@import "./var";
+@import "./font";
+@import "./utils";
+
+// COMPONENTS
+
+@import "components/hero";
+@import "components/header";
+@import "components/logo";
+@import "components/banner";
+@import "components/product_card";
+@import "components/footer";
+
+:root {
+  font-size: 16px; 
+}
+
+
+
+
+
+
+
+
+
+

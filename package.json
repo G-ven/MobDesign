@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "browser-style-normalizer": "^1.0.6",
-    "canvas-confetti": "^1.9.3"
+    "canvas-confetti": "^1.9.3",
+    "sass": "^1.79.4",
+    "the-new-css-reset": "^1.11.3"
   }
 }

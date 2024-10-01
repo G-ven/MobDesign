@@ -1,0 +1,25 @@
+.hero {
+    background-image: url(assets/img/home.jpeg);
+    background-size: cover;
+    height: 20.5rem;
+    
+}
+
+.baseline {
+    font-family: Work Sans_italic;
+    font-style: italic;
+    font-size: 1.5rem;
+    text-align: end;
+    padding-right: 1rem;
+
+    .intérieur{
+        font-family: Work Sans_bold;
+        font-size: 2rem;
+        color: $sinopia;
+        }
+    .style{
+        font-family: Abril Fatface;
+        font-size: 2rem;
+        color: $air_force_blue;
+    }
+} 

@@ -1,0 +1,61 @@
+.product_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem 1rem 1rem 0;
+    border: solid $white_smoke;
+    border-width: 0 0.5rem 0.5rem 0;
+
+    .produit{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+        .pdt{
+            font-family: Abril Fatface;
+            font-size: 2rem;
+            padding-right: 1.5rem;
+            h4{
+                font-family: Work Sans_regular;
+                color: $air_force_blue;
+                font-size: 1rem;
+                }
+        }
+        
+        .price{
+            font-family: Abril Fatface;
+            font-size: 2rem;
+            color: $sinopia;
+            flex-direction: row;
+            .cents{
+                font-size: 1.3rem;
+            }
+        }     
+    }
+    .txt {
+        font-family: Work Sans;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 1rem;
+        color: $black;
+        margin-bottom: 1.5rem;
+
+    }
+    .product-btn{
+        font-family: Abril Fatface;
+        color: white;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 1.5rem;
+        background-color: $air_force_blue;
+        padding: 0.5rem 1rem;
+        width: fit-content;
+        border-radius: 0.3rem;
+        margin: auto;
+
+    }
+  }
+  
+  
+ 
