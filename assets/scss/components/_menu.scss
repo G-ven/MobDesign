@@ -1,0 +1,18 @@
+.menu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    font-family: Work Sans_regular;
+    font-size: 1.25rem;
+    padding: 1rem;
+    text-align: center;
+    &.open{
+        display: block;
+    }
+
+}
+
+  .txt-menu{
+    padding: 1rem 0;
+  }
+  

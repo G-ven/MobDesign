@@ -1,5 +1,5 @@
 .hero {
-    background-image: url(assets/img/home.jpeg);
+    background-image: url('/assets/img/home.jpeg');
     background-size: cover;
     height: 20.5rem;
     
@@ -14,11 +14,14 @@
 
     .intérieur{
         font-family: Work Sans_bold;
+        font-weight: bold;
+        font-style: normal;
         font-size: 2rem;
         color: $sinopia;
         }
     .style{
         font-family: Abril Fatface;
+        font-style: normal;
         font-size: 2rem;
         color: $air_force_blue;
     }
