@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canapés</title>
+    <link rel="stylesheet" href="/assets/scss/style.scss">
+</head>
+<body>
+    <header>
+        <div class="header header--blanc js-menu">
+            <h1 class="header-ttl logo"><a href="/index.html">Mob<span class="logo-d">D</span>esign</a></h1>
+            <button type="button" class="header__btn" id="header-btn" aria-label="ouvrir la navigation">
+            <span class="sr-only">Ouvrir la navigation</span>
+            <!-- éviter les img directement dans le html : svg to css converter -->
+            </button>   
+        </div>
+        <nav class="menu js-menu"> <!-- menu déroulant -->
+            <ul>
+            <li class="txt-menu"><a href="/index.html">Accueil</a></li>
+            <li class="txt-menu"><a href="/nested/canapes.html">Canapés</a></li>
+            <li class="txt-menu">Décoration</li>
+            <li class="txt-menu">Mes coups de coeur</li>
+            </ul>
+        </nav>   
+    </header>
+
+    <div class="category">
+        <section class="category-banner">
+            <h2 class="category-banner__ttl">Les canapés</h2>
+            <p class="category-banner__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate saepe nulla sed sint numquam iure! Natus sunt magni enim?</p>
+        </section>
+    </div>
+
+    
+
+    <section>
+        <div class="product-card js-product-card">
+            <img class="product-card__image js-product-card__image" src="/assets/img/sofa-nordique-1.jpg" alt="">
+            <div class="product-card__product js-product-card__product">
+              <div class="product-card__pdt js-product-card__pdt">
+                <h3 class="product-card__ttl js-product-card__ttl">Sofa Nordique</h3>
+                <h4 class="js-product-card__cat">Canapés et fauteuils</h4>
+              </div>
+              <div>
+                <p class="product-card__price js-product-card__price">899€<span class="cents">99</span></p>
+              </div>
+            </div>
+            <p class="product-card__txt js-product-card__txt">Confortable sofa au design scandinave, parfait pour vos moments de détente.</p>
+            <div class="product-card__btn js-product-card__btn">
+              <button type="button">Découvrir</button>
+            </div> 
+        </div>
+    </section>
+        
+
+
+    <!-- FOOTER -->
+    <footer class="footer-mobile">
+    <nav class="nav-footer">
+        <ul>
+        <li><a href="/nested/info.html">Qui sommes nous ?</a></li>
+        </ul>
+        <ul class="nav-footer-mentions">
+        <li>Mentions légales</li>
+        <li>CGV</li>
+        </ul> 
+    </nav>
+    <nav class="liens">
+        <ul>
+        <li class="logoN"><a href="/index.html">Mob<span class="logo-w">D</span>esign</a></li>
+        </ul>
+        <ul class="social-media">
+        <li><a href="" class="insta" aria-label="visiter le compte instagram"></a></li>
+        <li><a href="" class="tiktok" aria-label="visiter le compte tiktok"></a></li>
+        <li><a href="" class="mastodon" aria-label="visiter le compte mastodon"></a></li>
+        </ul> 
+    </nav> 
+    </footer>
+  
+<script type="module" src="main.js"></script>
+    
+</body>
+</html>

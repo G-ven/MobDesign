@@ -5,4 +5,34 @@
     color: white;
     text-align: center;
     padding: 1rem;
+}
+
+.category{
+  background-image: url('/assets/img/canape-droit-scandinave-elga-convertible-3-places-en-tissu\ 1-2.png');
+  background-size: cover;
+  height: 10rem; 
+}
+
+.category-banner {
+  margin-top: 8rem;
+  position: absolute;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  min-width: 23rem;
+    
+  &__ttl{
+    background-color: $air_force_blue;
+    font-family: Abril Fatface;
+    font-size: 2.5rem;
+    color: white;
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: left;
+      
   }
+
+  &__p{
+    font-family: Work Sans_regular;
+    font-weight: normal;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+}

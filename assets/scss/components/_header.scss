@@ -3,21 +3,28 @@
   top: 0;
   display: flex;
   padding: 1rem;
-  margin-bottom: 1.5rem;
   justify-content: space-between;
   align-items: baseline;
-}
 
-.header-btn{
-  cursor: pointer;
-  &:after{
-    content: url('data:image/svg+xml,<svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.5" width="32" height="3" fill="black"/><rect y="11.5" width="32" height="3" fill="black"/><rect y="22.5" width="32" height="3" fill="black"/></svg>');
-  /* ajout code css du menu burger */
+  &__btn{
+    cursor: pointer;
+    &:after{
+      content: url('data:image/svg+xml,<svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.5" width="32" height="3" fill="black"/><rect y="11.5" width="32" height="3" fill="black"/><rect y="22.5" width="32" height="3" fill="black"/></svg>');
+    /* ajout code css du menu burger */
+    }
+  }
 
+  &.open{
+    background-color: white;
+  }
+
+  &--blanc{
+    background-color: white;
   }
 }
 
-.header-btn.close:after{
+.header__btn.close:after{
   content: url('data:image/svg+xml,<svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2.25121" y="0.564453" width="35" height="3" transform="rotate(45 2.25121 0.564453)" fill="black"/><rect x="0.129883" y="25.3125" width="35" height="3" transform="rotate(-45 0.129883 25.3125)" fill="black"/></svg>');
 }
+
 

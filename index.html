@@ -5,60 +5,99 @@
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MobDesign</title>
-    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="style.scss">  
   </head>
 
   <body>
     <header class="hero">
-      <div class="header">
-        <h1 class="header-ttl logo">Mob<span class="logo-d">D</span>esign</h1>
-        <button type="button" class="header-btn" id="header-btn" aria-label="ouvrir la navigation">
+      <div class="header js-menu">
+        <h1 class="header-ttl logo"><a href="/index.html">Mob<span class="logo-d">D</span>esign</a></h1>
+        <button type="button" class="header__btn" id="header-btn" aria-label="ouvrir la navigation">
           <span class="sr-only">Ouvrir la navigation</span>
           <!-- éviter les img directement dans le html : svg to css converter -->
-        </button>
-        <nav class="menu js-open-menu"> <!-- menu déroulant -->
-          <ul>
-            <li class="txt-menu">Accueil</li>
-            <li class="txt-menu">Canapés</li>
-            <li class="txt-menu">Décoration</li>
-            <li class="txt-menu">Mes coups de coeur</li>
-          </ul>
-        </nav>  
+        </button>   
       </div>
-  
+      <nav class="menu js-menu"> <!-- menu déroulant -->
+        <ul>
+          <li class="txt-menu"><a href="/index.html">Accueil</a></li>
+          <li class="txt-menu"><a href="/nested/canapes.html">Canapés</a></li>
+          <li class="txt-menu">Décoration</li>
+          <li class="txt-menu">Mes coups de coeur</li>
+        </ul>
+      </nav>   
       <div class="baseline">
         Votre <span class="intérieur">intérieur</span><br>
         réinventé avec <span class="style">style</span>
       </div>
     </header>
 
+    <!-- COLLECTION -->
+    <section class="home-collections">
+      <div class="collection">
+        <h2 class="collection__ttl">Notre collection</h2>
+        <p class="collection__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa nam quod quidem odit repellendus fuga, vero iure molestias eos!</p>
+        <div class="collection__lst">
+          <ul>
+            <li class="collection__itm collection__canapes">
+              <a href="/nested/canapes.html">
+                <img src="/assets/img/canape-droit-scandinave-elga-convertible-3-places-en-tissu 1.png" alt="">
+                <h3 class="itm__ttl js-ttl-canapes">Canapés</h3>
+              </a>
+            </li>
+            <li class="collection__itm collection__chaises">
+              <img src="/assets/img/chaises-ambiance.jpeg" alt="">
+              <h3 class="itm__ttl">Chaises</h3>
+            </li>
+            <li class="collection__itm collection__rangements">
+              <img src="/assets/img/commode-scandinave.png" alt="">
+              <h3 class="itm__ttl">Rangements</h3>
+            </li>
+            <li class="collection__itm collection__deco">
+              <img src="/assets/img/idee-deco-scandinave.png" alt="">
+              <h3 class="itm__ttl">Décoration</h3>
+            </li>
+            <li class="collection__itm collection__luminaires">
+              <img src="/assets/img/suspension-luminaire-bois-scnadinave.png" alt="">
+              <h3 class="itm__ttl">Luminaires</h3>
+            </li>
+          </ul>
+        </div>
+      </div> 
+    </section>
+
     <section class="banner">
       <h2>Nos dernières nouveautés</h2>
     </section>
-    
-    <section>
-      <div class="product_card">
-        <img src="assets/img/sofa-nordique-1.jpg" alt="">
-        <div class="produit">
-          <div class="pdt">
-            <h3>Sofa Nordique</h3>
-            <h4>Canapés et fauteuils</h4>
+
+    <!-- PRODUITS -->
+    <section class="product">
+
+    </section>
+   
+    <template id="productTemplate">
+      <div class="product-card js-product-card">
+        <img class="product-card__image js-product-card__image" src="assets/img/sofa-nordique-1.jpg" alt="">
+        <div class="product-card__product js-product-card__product">
+          <div class="product-card__pdt js-product-card__pdt">
+            <h3 class="product-card__ttl js-product-card__ttl">Sofa Nordique</h3>
+            <h4 class="js-product-card__cat">Canapés et fauteuils</h4>
           </div>
           <div>
-            <p class="price">899€<span class="cents">99</span></p>
+            <p class="product-card__price js-product-card__price">899€<span class="cents">99</span></p>
           </div>
         </div>
-        <p class="txt">Confortable sofa au design scandinave, parfait pour vos moments de détente.</p>
-        <div class="product-btn">
+        <p class="product-card__txt js-product-card__txt">Confortable sofa au design scandinave, parfait pour vos moments de détente.</p>
+        <div class="product-card__btn js-product-card__btn">
           <button type="button">Découvrir</button>
         </div> 
       </div>
-    </section>
+    </template>
 
+    <!-- FOOTER -->
     <footer class="footer-mobile">
       <nav class="nav-footer">
         <ul>
-          <li>Qui sommes nous ?</li>
+          <li><a href="/nested/info.html">Qui sommes nous ?</a></li>
         </ul>
         <ul class="nav-footer-mentions">
           <li>Mentions légales</li>
@@ -67,17 +106,16 @@
       </nav>
       <nav class="liens">
         <ul>
-          <li class="logoN">Mob<span class="logo-w">D</span>esign</li>
+          <li class="logoN"><a href="/index.html">Mob<span class="logo-w">D</span>esign</a></li>
         </ul>
         <ul class="social-media">
           <li><a href="" class="insta" aria-label="visiter le compte instagram"></a></li>
           <li><a href="" class="tiktok" aria-label="visiter le compte tiktok"></a></li>
           <li><a href="" class="mastodon" aria-label="visiter le compte mastodon"></a></li>
-        </ul>
-        
-      </nav>
-      
+        </ul> 
+      </nav> 
     </footer>
+
   <script type="module" src="main.js"></script>
   </body>
 
