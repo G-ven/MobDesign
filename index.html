@@ -31,7 +31,7 @@
       </div>
     </header>
 
-    <!-- COLLECTION -->
+    <!-- COLLECTION, affichage des différentes catégories de produits -->
     <section class="home-collections">
       <div class="collection">
         <h2 class="collection__ttl">Notre collection</h2>
@@ -66,32 +66,12 @@
     </section>
 
     <section class="banner">
-      <h2>Nos dernières nouveautés</h2>
+      <h2 class="banner__ttl">Nos dernières nouveautés</h2>
+      <ul id="product-list">
+        <li></li>
+      </ul>
     </section>
 
-    <!-- PRODUITS -->
-    <section class="product">
-
-    </section>
-   
-    <template id="productTemplate">
-      <div class="product-card js-product-card">
-        <img class="product-card__image js-product-card__image" src="assets/img/sofa-nordique-1.jpg" alt="">
-        <div class="product-card__product js-product-card__product">
-          <div class="product-card__pdt js-product-card__pdt">
-            <h3 class="product-card__ttl js-product-card__ttl">Sofa Nordique</h3>
-            <h4 class="js-product-card__cat">Canapés et fauteuils</h4>
-          </div>
-          <div>
-            <p class="product-card__price js-product-card__price">899€<span class="cents">99</span></p>
-          </div>
-        </div>
-        <p class="product-card__txt js-product-card__txt">Confortable sofa au design scandinave, parfait pour vos moments de détente.</p>
-        <div class="product-card__btn js-product-card__btn">
-          <button type="button">Découvrir</button>
-        </div> 
-      </div>
-    </template>
 
     <!-- FOOTER -->
     <footer class="footer-mobile">
@@ -117,6 +97,27 @@
     </footer>
 
   <script type="module" src="main.js"></script>
+
+  <!-- TEMPLATE -->
+  <template id="productTemplate">
+    <div class="product-card js-product-card">
+      <img class="product-card__image js-product-card__image" src="assets/img/sofa-nordique-1.jpg" alt="">
+      <div class="product-card__product js-product-card__product">
+        <div class="product-card__pdt js-product-card__pdt">
+          <h3 class="product-card__ttl js-product-card__ttl">Sofa Nordique</h3>
+          <h4 class="js-product-card__cat">Canapés et fauteuils</h4>
+        </div>
+        <div>
+          <p class="product-card__price js-product-card__price">899€<span class="cents">99</span></p>
+        </div>
+      </div>
+      <p class="product-card__txt js-product-card__txt">Confortable sofa au design scandinave, parfait pour vos moments de détente.</p>
+      <div class="product-card__btn js-product-card__btn">
+        <button type="button">Découvrir</button>
+      </div> 
+    </div>
+  </template>
+
   </body>
 
 </html>

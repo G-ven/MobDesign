@@ -22,38 +22,29 @@ async function afficherProduct() {
     const reponse = await fetch("/assets/products.json");
     const products = await reponse.json();
 
-    /* console.log(products); /* vérifie la liaison du .json */ 
+    /* console.log(products); vérifie la liaison du .json */ 
 
-    products.forEach(prod => {
-        const productTemplate = document.getElementById('productTemplate');
-        const product = document.importNode(productTemplate.content, true);
-
-        product.querySelector('.js-product-card__image').src = '/assets/img' + prod.imageUrl;
-        product.querySelector('.js-product-card__ttl').textContent = prod.title;
-        product.querySelector('.js-product-card__cat').textContent = prod.category;
-        product.querySelector('.js-product-card__price').textContent = prod.price.toString().replace("."," € ");
-        product.querySelector('.js-product-card__txt').textContent = prod.description;
-        product.querySelector('.js-product-card__btn').textContent = 'Découvrir'
-
-        document.getElementById('main').appendChild(product);
-        
-    }) 
-}
+    products.forEach(createProductCard) 
+} 
     afficherProduct();
 
 
 
-/*function products(element) {
-    const produits = jsonObj["products"].getElementById(elementId: string);
+function createProductCard(productData){
+    const productTemplate = document.getElementById('productTemplate');
+        const product = document.importNode(productTemplate.content, true);
 
-    for (i=0; i<products.length; i++){
-        const title = document.createElement("h3");
-        const description = document.createElement("h4");
-        const imageUrl = document.createElement("img");
-        const price = document.createElement("p");
-        
-        title.textContent = produits[i].title;
-        description.textContent = produits[i].description;
-        price.textContent = produits[i].price;
-    }
-} */
+        product.querySelector('.js-product-card__image').src = '/assets/' + productData.imageUrl.replace("images", "img");
+        product.querySelector('.js-product-card__ttl').textContent = productData.title;
+        product.querySelector('.js-product-card__cat').textContent = productData.category;
+        product.querySelector('.js-product-card__price').textContent = productData.price.toString().replace("."," € ");
+        product.querySelector('.js-product-card__txt').textContent = productData.description;
+        product.querySelector('.js-product-card__btn').textContent = 'Découvrir';
+
+        const listElement = document.createElement('li');
+
+        listElement.appendChild(product);
+        document.getElementById('product-list').appendChild(listElement);
+
+}
+
